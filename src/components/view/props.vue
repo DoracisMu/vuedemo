@@ -1,6 +1,6 @@
 <template>
     <div>
-      <p>$props和$attrs测试</p>
+      <p class="props">$props和$attrs测试</p>
       <t3com1 :name="name" :age="age" :gender="gender" type="text"></t3com1>
     </div>
 </template>
@@ -22,6 +22,10 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+div{
+  p.props{
+    background-color: #42b983;
+  }
+}
 </style>
