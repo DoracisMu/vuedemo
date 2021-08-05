@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/view/HelloWorld'
-import test1 from '@/components/view/test1'
+import mock from '@/components/view/mock'
 import test2 from '@/components/view/test2'
-import test3 from '@/components/view/test3'
-import test4 from '@/components/view/test4'
+import props from '@/components/view/props'
+import chat from '@/components/view/chat'
 import login from '@/components/view/login'
 
 Vue.use(Router)
@@ -22,9 +22,9 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/test1',
-      name: 'test1',
-      component: test1
+      path: '/mock',
+      name: 'mock',
+      component: mock
     },
     {
       path: '/test2',
@@ -32,19 +32,14 @@ export default new Router({
       component: test2
     },
     {
-      path: '/test3',
-      name: 'test3',
-      component: test3
+      path: '/props',
+      name: 'props',
+      component: props
     },
     {
-      path: '/test4',
-      name: 'test4',
-      component: test4
-    },
-    {
-      path: '/test5',
-      name: 'test5',
-      component: () => import('@/components/view/test5')
+      path: '/chat',
+      name: 'chat',
+      component: chat
     }
   ]
 })
