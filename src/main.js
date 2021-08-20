@@ -10,12 +10,13 @@ import 'element-ui/lib/theme-chalk/index.css'
 import $ from 'jquery'
 
 import axios from 'axios'
+import Chat from 'vue-beautiful-chat'
 require('./mock')
 Vue.use(ElementUI)
 Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false
-
+Vue.use(Chat)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

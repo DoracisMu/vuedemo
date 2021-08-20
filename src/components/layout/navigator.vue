@@ -13,6 +13,7 @@
       <el-menu-item index="2" @click="jumpTo('test2')" id="item2">选项2</el-menu-item>
       <el-menu-item index="3" @click="jumpTo('props')" id="item3">test3:$props</el-menu-item>
       <el-menu-item index="4" @click="jumpTo('chat')" id="item4">test4:chat</el-menu-item>
+      <el-menu-item index="4" @click="jumpTo('vantChat')" id="item5">test5:vantChat</el-menu-item>
     </el-menu>
   </div>
 </template>

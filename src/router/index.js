@@ -5,6 +5,7 @@ import mock from '@/components/view/mock'
 import test2 from '@/components/view/test2'
 import props from '@/components/view/props'
 import chat from '@/components/view/chat'
+import vantChat from '@/components/view/vantChat'
 import login from '@/components/view/login'
 
 Vue.use(Router)
@@ -40,6 +41,11 @@ export default new Router({
       path: '/chat',
       name: 'chat',
       component: chat
+    },
+    {
+      path: '/vantChat',
+      name: 'vantChat',
+      component: vantChat
     }
   ]
 })
