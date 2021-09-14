@@ -11,8 +11,10 @@ import $ from 'jquery'
 
 import axios from 'axios'
 import Chat from 'vue-beautiful-chat'
+import store from './store'
 require('./mock')
 Vue.use(ElementUI)
+
 Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false
@@ -21,6 +23,7 @@ Vue.use(Chat)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

@@ -9,11 +9,9 @@
       active-text-color="#ffd04b"
       style="height: calc(100vh - 61px)"
     >
-      <el-menu-item index="1" @click="jumpTo('mock')" id="item1">test1:mock</el-menu-item>
-      <el-menu-item index="2" @click="jumpTo('test2')" id="item2">选项2</el-menu-item>
-      <el-menu-item index="3" @click="jumpTo('props')" id="item3">test3:$props</el-menu-item>
-      <el-menu-item index="4" @click="jumpTo('chat')" id="item4">test4:chat</el-menu-item>
-      <el-menu-item index="4" @click="jumpTo('vantChat')" id="item5">test5:vantChat</el-menu-item>
+      <el-menu-item v-for="(item, index) in this.$store.menuList" :index="index" @click="jumpTo(item)" :id="item" :key="item">
+        test{{ index }}: {{ item }}
+      </el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -23,9 +21,11 @@ export default {
   name: "navigator",
   components: {},
   data() {
-    return {};
+    return {
+    };
   },
-  mounted() {},
+  mounted() {
+  },
   methods: {
     handleOpen(key, keyPath) {
       console.log(key, keyPath);

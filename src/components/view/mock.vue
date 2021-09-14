@@ -38,6 +38,8 @@
 </template>
 
 <script>
+import name from './newName.js'
+
 export default {
   name: 'test1',
   components: {},
@@ -51,15 +53,16 @@ export default {
   },
   methods: {
     search: function () {
-      this.$axios({
-        url: '/mock/getUserDataset',
-        method: 'post',
-        data: ''
-      }).then((response) => {
-        this.tableData = response.data.data
-      }).catch((error) => {
-        console.log(error) // 请求失败返回的数据
-      })
+      console.log(name)
+      // this.$axios({
+      //   url: '/mock/getUserDataset',
+      //   method: 'post',
+      //   data: ''
+      // }).then((response) => {
+      //   this.tableData = response.data.data
+      // }).catch((error) => {
+      //   console.log(error) // 请求失败返回的数据
+      // })
     }
   },
   watch: {}

@@ -36,6 +36,7 @@ export default {
   name: 'app',
   data() {
     return {
+      new: '11',
       icons: {
         open: {
           img: OpenIcon,
