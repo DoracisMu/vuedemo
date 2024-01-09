@@ -43,11 +43,12 @@ export default {
   components: {},
   data () {
     return {
-      searchValue: '',
+      searchValue: '' ,
       tableData: []
     }
   },
   mounted () {
+  console.log('mounted success')
   },
   methods: {
     search: function () {
